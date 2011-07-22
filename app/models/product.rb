@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
             
   protected
     def price_must_be_at_least_a_cent
-      errors.add(:price, 'Should be atlest 0.01') if price.nil? || price <0.01
+      errors.add(:price, 'Should be atleast 0.01') if price.nil? || price <0.01
     end
 
 end
